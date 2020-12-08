@@ -98,7 +98,7 @@ body{
 .add-items input[type="text"] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    width: 100%;
+    width: 75%;
     background: transparent
 }
 
@@ -270,8 +270,8 @@ body{
 .form-check .form-check-label {
     min-height: 18px;
     display: block;
-    margin-left: 1.75rem;
-    font-size: 0.875rem;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.5
 }
 
@@ -467,3 +467,17 @@ input[type="checkbox"] {
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item {
     display: flex !important
 }
+
+.form{
+    position: relative;
+    width: 100%;
+}
+#btn{
+    position: absolute;
+    right: 0;
+    width: 25%;
+    top: 0;
+    height: 50px;
+    background: linear-gradient(to top, #96c93d, #00b09b);
+}
+
