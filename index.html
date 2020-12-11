@@ -1,12 +1,18 @@
 <html lang="en">
 <head>
     <title>To do</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link href='assets/css/bootstrap.min.css'>
     <link rel="stylesheet" href="assets/font/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- <script src='assets/js/bootstrap.bundle.min.js'></script> -->
     <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> -->
     <script src='assets/js/main.js'></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .filtered{
+            display: none !important;
+        }
+        
+    </style>
 </head>
 <body>
     <div class="page-content page-container" id="page-content">
@@ -17,9 +23,9 @@
                         <div class="card-body">
                             <h2 class="card-title">Awesome Todo list</h4>
                             <div class="add-items d-flex"> 
-                                <form id="ip" class="form" method="POST">
-                                    <input type="text" id='task' class="form-control todo-list-input" placeholder="What do you need to do today?"> 
-                                    <input type="submit" id="btn" type="submit" class="add btn btn-primary font-weight-bold todo-list-add-btn" > 
+                                <form id="serch" class="form" method="POST">
+                                    <input type="text" id='sip' class="form-control todo-list-input" placeholder="Search Here"> 
+                                    <!-- <input type="submit" id="btn" type="submit" class="add btn btn-primary font-weight-bold todo-list-add-btn" >  -->
                                 </form>
                             </div>
                             
@@ -55,6 +61,12 @@
                                     </li>
                                     
                                 </ul>
+
+                                <form id="ip" class="form" method="POST">
+                                    <input type="text" id='task' class="form-control todo-list-input" placeholder="Add new To Do?"> 
+                                    <input type="submit" id="btn" type="submit" class="add btn btn-primary font-weight-bold todo-list-add-btn" > 
+                                </form>
+
                             </div>
                         </div>
                     </div>
